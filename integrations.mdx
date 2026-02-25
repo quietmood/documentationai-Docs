@@ -1,0 +1,175 @@
+---
+title: Integrations and Workflows
+description: Connect Quietmood with third-party tools to enhance your documentation workflow. Learn how to set up integrations for seamless collaboration and automation.
+---
+
+## Overview
+
+Quietmood supports seamless integrations with popular tools to automate your documentation processes. Connect your GitHub repositories for automatic syncing, set up webhooks for real-time updates, integrate with third-party apps like Slack and Zapier, and build custom workflows to fit your needs.
+
+<Columns cols={3}>
+  <Card title="GitHub" icon="github" href="#github-integration">
+    Sync repositories and trigger builds on documentation changes.
+  </Card>
+  <Card title="Webhooks" icon="zap" href="#webhooks">
+    Receive instant notifications for events like page updates.
+  </Card>
+  <Card title="Third-Party Apps" icon="plug" href="#third-party">
+    Connect Slack, Zapier, and more for notifications and automation.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Before starting, ensure you have admin access to your Quietmood workspace and the target services. Generate an API key from your Quietmood settings at `https://app.quietmood.it/settings/api`.
+</Callout>
+
+## GitHub Integration
+
+Link your GitHub repository to Quietmood to automatically publish documentation updates from commits.
+
+<Steps>
+  <Step title="Create a Personal Access Token" icon="key">
+    In GitHub, navigate to Settings > Developer settings > Personal access tokens. Generate a new token with `repo` scope.
+  </Step>
+  <Step title="Connect in Quietmood" icon="settings">
+    Go to Quietmood Integrations > GitHub. Paste your token and select the repository.
+  </Step>
+  <Step title="Configure Webhook" icon="plug">
+    Quietmood auto-configures the webhook. Test by pushing a commit to your repo.
+  </Step>
+</Steps>
+
+```javascript
+// Example GitHub Action to deploy to Quietmood
+name: Deploy Docs
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Quietmood
+        run: curl -X POST https://api.example.com/v1/docs/deploy \
+          -H "Authorization: Bearer ${QUIETMOOD_TOKEN}" \
+          -d '{"repo": "your-org/docs"}'
+```
+
+## Webhook Setup
+
+Set up webhooks to receive payloads from Quietmood for events like page publishes or comments.
+
+<CodeGroup tabs="JavaScript,Python,cURL">
+  ```javascript
+  const express = require('express');
+  const app = express();
+  app.use(express.json());
+
+  app.post('/quietmood-webhook', (req, res) => {
+    const event = req.headers['x-quietmood-event'];
+    console.log(`Event: ${event}`, req.body);
+    res.status(200).send('OK');
+  });
+
+  app.listen(3000);
+  ```
+  ```python
+  from flask import Flask, request
+  app = Flask(__name__)
+
+  @app.route('/quietmood-webhook', methods=['POST'])
+  def webhook():
+      event = request.headers.get('X-Quietmood-Event')
+      print(f"Event: {event}", request.json)
+      return 'OK', 200
+
+  if __name__ == '__main__':
+      app.run(port=3000)
+  ```
+  ```bash
+  # Register webhook via API
+  curl -X POST https://api.example.com/v1/webhooks \
+    -H "Authorization: Bearer YOUR_QUIETMOOD_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "url": "https://your-server.com/quietmood-webhook",
+      "events": ["page.updated", "comment.created"]
+    }'
+  ```
+</CodeGroup>
+
+<ParamField path="event" param-type="string" required="true">
+  The webhook event type, such as `page.updated` or `page.published`.
+</ParamField>
+
+<ParamField body="page_id" param-type="string">
+  ID of the affected documentation page.
+</ParamField>
+
+## Third-Party App Integrations
+
+Quietmood integrates natively with popular automation tools.
+
+<Tabs>
+  <Tab title="Slack" icon="message-circle">
+    <Steps>
+      <Step title="Add Slack App">
+        Install the Quietmood Slack app from the Slack App Directory.
+      </Step>
+      <Step title="Connect Workspace">
+        Authorize Quietmood and select notification channels.
+      </Step>
+    </Steps>
+
+    Notifications arrive for page updates and mentions.
+  </Tab>
+  <Tab title="Zapier" icon="zap">
+    Create Zaps triggered by Quietmood events.
+
+    ```json
+    {
+      "trigger": "quietmood_new_page",
+      "action": "slack_post_message",
+      "channel": "#docs"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+## Custom Workflow Automation
+
+Build advanced automations using Quietmood's API.
+
+```mermaid
+sequenceDiagram
+  participant U as GitHub
+  participant Q as Quietmood API
+  participant S as Slack
+  U->>Q: Push Event (Webhook)
+  Q->>Q: Deploy Docs
+  Q->>S: Notification
+  S->>U: Confirmation
+```
+
+<Expandable title="Advanced: CI/CD Pipeline Example" default-open="false">
+
+Integrate with GitHub Actions for full CI/CD.
+
+```yaml
+# .github/workflows/docs.yml
+name: Docs CI
+on: pull_request
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx quietmood deploy --preview
+        env:
+          QUIETMOOD_TOKEN: ${{ secrets.QUIETMOOD_TOKEN }}
+```
+
+</Expandable>
+
+<Callout kind="tip">
+  Explore more in the [API Reference](/api) or start with [Quickstart](/quickstart) for basics.
+</Callout>

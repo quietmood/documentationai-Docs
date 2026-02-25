@@ -1,0 +1,141 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Quietmood. This page lists recent releases with details on new features and bug fixes.
+---
+
+## Recent Releases
+
+Quietmood releases updates regularly to enhance your experience with our documentation platform and coaching tools. Review the details below to see what's new.
+
+<Callout kind="info">
+  Enable automatic updates in your account settings to always stay on the latest version. Check your dashboard at `https://dashboard.example.com` for update status.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added podcast notifications for new episodes of **Comfort Zone** directly in your dashboard
+- Introduced 70% discount coupon generation for Quietmood Academy workshops upon newsletter signup
+- Newsletter subscription flow now integrates with your profile for personalized content
+
+## Improvements
+
+- Enhanced signup process with better privacy policy links and consent management
+- Improved mobile responsiveness for podcast episode pages
+
+## Bug Fixes
+
+- Fixed email delivery issues for workshop coupon notifications
+- Resolved footer navigation accessibility links on Italian language pages
+
+</Update>
+
+<Update label="2024-09-28" description="v1.1.5" tags={["improvement", "bugfix"]}>
+
+## Improvements
+
+- Optimized performance for newsletter signup forms, reducing load time by 40%
+- Added Italian language support for all podcast descriptions and workshop details
+
+## Bug Fixes
+
+- Corrected privacy policy link redirects in subscription modals
+- Fixed coupon validation errors during academy workshop registration
+
+</Update>
+
+<Update label="2024-08-15" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched initial podcast integration with episode embeds from **Comfort Zone**
+- Added newsletter signup with automatic coupon delivery for first-time subscribers
+
+## Breaking Changes
+
+- Updated subscription API endpoints; migrate to new format at `https://api.example.com/v2/subscribe`
+- Removed legacy footer widget compatibility for older browsers
+
+## Bug Fixes
+
+- Patched form validation for name and email fields in signup modals
+
+</Update>
+
+## How to Upgrade
+
+Follow these steps to update Quietmood to the latest version.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+
+    View your current version in the dashboard.
+
+    ```bash
+    quietmood --version
+    ```
+
+  </Step>
+  <Step title="Update via CLI" icon="download">
+
+    <Tabs>
+      <Tab title="npm" icon="package">
+        ```bash
+        npm update quietmood
+        ```
+      </Tab>
+      <Tab title="Docker" icon="docker">
+````dockerfile
+docker pull quietmood:latest
+docker-compose up -d
+````
+      </Tab>
+    </Tabs>
+
+  </Step>
+  <Step title="Verify Update" icon="shield-check">
+
+    Restart services and confirm the new version.
+
+    <CodeGroup tabs="CLI,Dashboard">
+      ```bash
+      quietmood status
+      ```
+      ```javascript
+      // Check via API
+      fetch('https://api.example.com/version')
+        .then(res => res.json())
+        .then(data => console.log(data.version));
+      ```
+    </CodeGroup>
+
+  </Step>
+</Steps>
+
+## Known Issues and Resolutions
+
+<ExpandableGroup>
+  <Expandable title="Signup form occasionally fails on mobile" default-open="true">
+    This affects Safari on iOS 17. Workaround: Use Chrome or update to iOS 18. Fixed in v1.2.1 (upcoming).
+  </Expandable>
+  <Expandable title="Coupon emails delayed in high-traffic periods">
+    Due to email provider throttling. Resolutions: Check spam folder or resend from dashboard. Mitigated in v1.2.0 with queue improvements.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="tip">
+  Found a bug? [Submit feedback](/introduction#feedback) or check the [GitHub repository](https://github.com/example/quietmood).
+</Callout>
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Get started after upgrading.
+  </Card>
+  <Card title="API Reference" icon="code" href="/authentication">
+    Updated endpoints details.
+  </Card>
+  <Card title="Support" icon="help-circle" href="/help-center">
+    Need assistance? Contact us.
+  </Card>
+</Columns>
