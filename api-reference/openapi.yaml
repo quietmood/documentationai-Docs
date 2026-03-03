@@ -1,0 +1,21 @@
+openapi: 3.0.3
+info:
+  title: Quietmood API
+  description: |
+    This is a placeholder OpenAPI specification for the Quietmood API.
+
+    It defines basic API metadata and server configuration but does not yet include any endpoints or reusable components. Future versions of this specification will introduce resources, operations, and schemas as the API evolves.
+  version: 0.1.0
+  contact:
+    name: Quietmood API Support
+    url: https://quietmood.example
+    email: support@quietmood.example
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: https://api.quietmood.example
+    description: Placeholder Quietmood API server
+tags: []
+paths: {}
+components: {}
