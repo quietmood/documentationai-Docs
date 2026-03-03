@@ -1,1 +1,114 @@
-{"name":"Quietmood","colors":{"light":{"brand":"#2575FC","heading":"undefined","text":"undefined"},"dark":{"brand":"#74A6F9","heading":"undefined","text":"undefined"}},"openapi":"api-reference/openapi.yaml","navigation":{"pages":[{"title":"Help Center","path":"help-center-quietmood"},{"title":"Quali servizi offre Quietmood","path":"help-center/servizi/quali-servizi-offre-quietmood"},{"title":"Conoscere la Strategia Quietmood","path":"help-center/servizi/conoscere-strategia-quietmood"},{"title":"Come fissare una consulenza","path":"help-center/servizi/come-fissare-consulenza"},{"title":"Creare un nuovo progetto","path":"help-center/guides/create-new-project"},{"title":"E se non fossi pronto ad agire oggi?","path":"help-center/faq/strategia/se-non-fossi-pronto-ad-agire-oggi"},{"title":"Perché non ne ho mai sentito parlare prima della Strategia Quietmood","path":"help-center/faq/strategia/perche-non-ne-ho-sentito-parlare"},{"title":"Perché dovrei credere alle tue affermazioni e promesse sulla possibilità di evolvere senza uscire dalla zona di comfort","path":"help-center/faq/strategia/perche-crederci"},{"title":"Mi piacerebbe sperimentare la Strategia Quietmood, ma non ho soldi","path":"help-center/faq/strategia/mi-piacerebbe-ma-non-ho-soldi"},{"title":"Sì, ma funzionerà per me?","path":"help-center/faq/strategia/funzionera-per-me"},{"title":"In che modo la Strategia Quietmood è diversa da qualsiasi cosa io abbia provato?","path":"help-center/faq/strategia/differenze-strategia-quietmood"},{"title":"FAQ: come iniziare","path":"help-center/faq/getting-started"},{"title":"Quiet Circle: come funziona dopo l’iscrizione","path":"help-center/academy/quiet-circle-come-funziona"},{"title":"Dopo l'iscrizione all'account gratuito della Quietmood Academy","path":"help-center/academy/dopo-iscrizione-account-gratuito-come-funziona"},{"title":"Come scaricare l’app Quietmood Academy","path":"help-center/academy/come-scaricare-app-quietmood-academy"},{"title":"Come accedere alla Quietmood Academy","path":"help-center/academy/come-accedere-quietmood-academy"}]}}
+{
+  "name": "Quietmood",
+  "colors": {
+    "light": {
+      "brand": "#2575FC",
+      "heading": "undefined",
+      "text": "undefined"
+    },
+    "dark": {
+      "brand": "#74A6F9",
+      "heading": "undefined",
+      "text": "undefined"
+    }
+  },
+  "openapi": "api-reference/openapi.yaml",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Help Center",
+        "pages": [
+          {
+            "title": "Help Center",
+            "path": "help-center-quietmood"
+          }
+        ]
+      },
+      {
+        "group": "Servizi",
+        "pages": [
+          {
+            "title": "Quali servizi offre Quietmood",
+            "path": "help-center/servizi/quali-servizi-offre-quietmood"
+          },
+          {
+            "title": "Conoscere la Strategia Quietmood",
+            "path": "help-center/servizi/conoscere-strategia-quietmood"
+          },
+          {
+            "title": "Come fissare una consulenza",
+            "path": "help-center/servizi/come-fissare-consulenza"
+          }
+        ]
+      },
+      {
+        "group": "Guide",
+        "pages": [
+          {
+            "title": "Creare un nuovo progetto",
+            "path": "help-center/guides/create-new-project"
+          }
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          {
+            "group": "Strategia",
+            "pages": [
+              {
+                "title": "E se non fossi pronto ad agire oggi?",
+                "path": "help-center/faq/strategia/se-non-fossi-pronto-ad-agire-oggi"
+              },
+              {
+                "title": "Perché non ne ho mai sentito parlare prima della Strategia Quietmood",
+                "path": "help-center/faq/strategia/perche-non-ne-ho-sentito-parlare"
+              },
+              {
+                "title": "Perché dovrei credere alle tue affermazioni e promesse sulla possibilità di evolvere senza uscire dalla zona di comfort",
+                "path": "help-center/faq/strategia/perche-crederci"
+              },
+              {
+                "title": "Mi piacerebbe sperimentare la Strategia Quietmood, ma non ho soldi",
+                "path": "help-center/faq/strategia/mi-piacerebbe-ma-non-ho-soldi"
+              },
+              {
+                "title": "Sì, ma funzionerà per me?",
+                "path": "help-center/faq/strategia/funzionera-per-me"
+              },
+              {
+                "title": "In che modo la Strategia Quietmood è diversa da qualsiasi cosa io abbia provato?",
+                "path": "help-center/faq/strategia/differenze-strategia-quietmood"
+              }
+            ]
+          },
+          {
+            "title": "FAQ: come iniziare",
+            "path": "help-center/faq/getting-started"
+          }
+        ]
+      },
+      {
+        "group": "Academy",
+        "pages": [
+          {
+            "title": "Quiet Circle: come funziona dopo l’iscrizione",
+            "path": "help-center/academy/quiet-circle-come-funziona"
+          },
+          {
+            "title": "Dopo l'iscrizione all'account gratuito della Quietmood Academy",
+            "path": "help-center/academy/dopo-iscrizione-account-gratuito-come-funziona"
+          },
+          {
+            "title": "Come scaricare l’app Quietmood Academy",
+            "path": "help-center/academy/come-scaricare-app-quietmood-academy"
+          },
+          {
+            "title": "Come accedere alla Quietmood Academy",
+            "path": "help-center/academy/come-accedere-quietmood-academy"
+          }
+        ]
+      }
+    ]
+  }
+}
