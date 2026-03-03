@@ -13,6 +13,75 @@
     }
   },
   "navigation": {
-    "pages": []
+    "pages": [
+      {
+        "title": "Changelog",
+        "path": "changelog"
+      },
+      {
+        "title": "Help Center Quietmood",
+        "path": "help-center-quietmood"
+      },
+      {
+        "title": "Help Center/servizi/quali Servizi Offre Quietmood",
+        "path": "help-center/servizi/quali-servizi-offre-quietmood"
+      },
+      {
+        "title": "Help Center/servizi/conoscere Strategia Quietmood",
+        "path": "help-center/servizi/conoscere-strategia-quietmood"
+      },
+      {
+        "title": "Help Center/servizi/come Fissare Consulenza",
+        "path": "help-center/servizi/come-fissare-consulenza"
+      },
+      {
+        "title": "Help Center/guides/create New Project",
+        "path": "help-center/guides/create-new-project"
+      },
+      {
+        "title": "Help Center/faq/strategia/se Non Fossi Pronto Ad Agire Oggi",
+        "path": "help-center/faq/strategia/se-non-fossi-pronto-ad-agire-oggi"
+      },
+      {
+        "title": "Help Center/faq/strategia/perche Non Ne Ho Sentito Parlare",
+        "path": "help-center/faq/strategia/perche-non-ne-ho-sentito-parlare"
+      },
+      {
+        "title": "Help Center/faq/strategia/perche Crederci",
+        "path": "help-center/faq/strategia/perche-crederci"
+      },
+      {
+        "title": "Help Center/faq/strategia/mi Piacerebbe Ma Non Ho Soldi",
+        "path": "help-center/faq/strategia/mi-piacerebbe-ma-non-ho-soldi"
+      },
+      {
+        "title": "Help Center/faq/strategia/funzionera Per Me",
+        "path": "help-center/faq/strategia/funzionera-per-me"
+      },
+      {
+        "title": "Help Center/faq/strategia/differenze Strategia Quietmood",
+        "path": "help-center/faq/strategia/differenze-strategia-quietmood"
+      },
+      {
+        "title": "Help Center/faq/getting Started",
+        "path": "help-center/faq/getting-started"
+      },
+      {
+        "title": "Help Center/academy/quiet Circle Come Funziona",
+        "path": "help-center/academy/quiet-circle-come-funziona"
+      },
+      {
+        "title": "Help Center/academy/dopo Iscrizione Account Gratuito Come Funziona",
+        "path": "help-center/academy/dopo-iscrizione-account-gratuito-come-funziona"
+      },
+      {
+        "title": "Help Center/academy/come Scaricare App Quietmood Academy",
+        "path": "help-center/academy/come-scaricare-app-quietmood-academy"
+      },
+      {
+        "title": "Help Center/academy/come Accedere Quietmood Academy",
+        "path": "help-center/academy/come-accedere-quietmood-academy"
+      }
+    ]
   }
 }
