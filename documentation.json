@@ -142,5 +142,14 @@
         "value": ""
       }
     }
+  },
+  "ai": {
+    "page-actions": [
+      "claude",
+      "chatgpt",
+      "perplexity",
+      "grok",
+      "mcp"
+    ]
   }
 }
