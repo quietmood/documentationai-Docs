@@ -127,6 +127,20 @@
   "integrations": {
     "ga4": {
       "measurementId": "G-150909332"
+    },
+    "cookies": {
+      "analytics": {
+        "key": "",
+        "value": ""
+      },
+      "statistics": {
+        "key": "",
+        "value": ""
+      },
+      "advertising": {
+        "key": "",
+        "value": ""
+      }
     }
   }
 }
