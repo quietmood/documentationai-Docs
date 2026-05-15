@@ -123,5 +123,10 @@
   "favicon": "https://blob-cdn.documentation.ai/org-cf396de9-4fdb-4005-a8db-85045a337b07/doc-8a935ecb-1ed9-4e33-b479-622511309e6c/1772793070339-fhjm2zo1pow-comfy.png?q=85&fm=auto&auto=compress%2Cformat",
   "logo-light": "https://blob-cdn.documentation.ai/org-cf396de9-4fdb-4005-a8db-85045a337b07/doc-8a935ecb-1ed9-4e33-b479-622511309e6c/1772793070339-fhjm2zo1pow-comfy.png?q=85&fm=auto&auto=compress%2Cformat",
   "initialRoute": "help-center-quietmood",
-  "template": "atlas"
+  "template": "atlas",
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-150909332"
+    }
+  }
 }
