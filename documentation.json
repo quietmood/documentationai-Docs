@@ -42,15 +42,6 @@
         ]
       },
       {
-        "group": "Guide",
-        "pages": [
-          {
-            "title": "Creare un nuovo progetto",
-            "path": "help-center/guides/create-new-project"
-          }
-        ]
-      },
-      {
         "group": "FAQ",
         "pages": [
           {
