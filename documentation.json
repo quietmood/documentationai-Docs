@@ -151,5 +151,23 @@
       "grok",
       "mcp"
     ]
+  },
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Sito web Quietmood",
+        "link": "https://quietmood.it"
+      },
+      "links": [
+        {
+          "title": "Membership Quiet Circle",
+          "link": "https://quietcircle.online"
+        },
+        {
+          "title": "Quietmood Academy",
+          "link": "https://www.quietmood.academy"
+        }
+      ]
+    }
   }
 }
