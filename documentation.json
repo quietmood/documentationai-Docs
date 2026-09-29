@@ -168,6 +168,31 @@
           {
             "title": "Strumenti Quietmood",
             "path": "help-center/scuola-quietmood/strumenti-quietmood"
+          },
+          {
+            "group": "Approcci integrati",
+            "pages": [
+              {
+                "title": "Schema Therapy",
+                "path": "help-center/scuola-quietmood/schema-therapy"
+              },
+              {
+                "title": "Ipnosi Ericksoniana",
+                "path": "help-center/scuola-quietmood/ipnosi-ericksoniana"
+              },
+              {
+                "title": "Terapia Breve Strategica",
+                "path": "help-center/scuola-quietmood/terapia-breve-strategica"
+              },
+              {
+                "title": "EMDR",
+                "path": "help-center/scuola-quietmood/emdr"
+              },
+              {
+                "title": "Sistemi Familiari Interni (IFS)",
+                "path": "help-center/scuola-quietmood/sistemi-familiari-interni-ifs"
+              }
+            ]
           }
         ]
       }
