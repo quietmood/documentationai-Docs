@@ -1,141 +1,99 @@
 ---
 title: Changelog
-description: Track the latest updates and improvements to Quietmood. This page lists recent releases with details on new features and bug fixes.
+description: Tieni traccia degli ultimi aggiornamenti e miglioramenti di Quietmood: nuove funzionalità, fix e cambiamenti rilevanti.
 ---
 
-## Recent Releases
+## Ultime release
 
-Quietmood releases updates regularly to enhance your experience with our documentation platform and coaching tools. Review the details below to see what's new.
-
-<Callout kind="info">
-  Enable automatic updates in your account settings to always stay on the latest version. Check your dashboard at `https://dashboard.example.com` for update status.
-</Callout>
+Qui trovi le ultime novità di Quietmood, Quietmood Academy e Quiet Circle, incluse nuove funzionalità, miglioramenti e correzioni.
 
 <Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
 
-## New Features
+## Nuove funzionalità
 
-- Added podcast notifications for new episodes of **Comfort Zone** directly in your dashboard
-- Introduced 70% discount coupon generation for Quietmood Academy workshops upon newsletter signup
-- Newsletter subscription flow now integrates with your profile for personalized content
+- Aggiunte le notifiche per i nuovi episodi del podcast **Comfort Zone** direttamente nella tua area personale.
+- Introdotta la generazione di coupon con sconto del 70% per i workshop di Quietmood Academy dopo l'iscrizione alla newsletter.
+- Il flusso di iscrizione alla newsletter ora si integra con il tuo profilo per offrirti contenuti personalizzati.
 
-## Improvements
+## Miglioramenti
 
-- Enhanced signup process with better privacy policy links and consent management
-- Improved mobile responsiveness for podcast episode pages
+- Migliorato il processo di iscrizione con collegamenti più chiari all'informativa sulla privacy e una gestione più completa del consenso.
+- Ottimizzata la visualizzazione delle pagine degli episodi del podcast sui dispositivi mobili.
 
-## Bug Fixes
+## Correzioni
 
-- Fixed email delivery issues for workshop coupon notifications
-- Resolved footer navigation accessibility links on Italian language pages
+- Risolti i problemi di consegna delle email contenenti i coupon per i workshop.
+- Corretti i collegamenti di accessibilità nel footer delle pagine in italiano.
 
 </Update>
 
 <Update label="2024-09-28" description="v1.1.5" tags={["improvement", "bugfix"]}>
 
-## Improvements
+## Miglioramenti
 
-- Optimized performance for newsletter signup forms, reducing load time by 40%
-- Added Italian language support for all podcast descriptions and workshop details
+- Ottimizzate le prestazioni dei moduli di iscrizione alla newsletter, con una riduzione del 40% nei tempi di caricamento.
+- Aggiunto il supporto in italiano per tutte le descrizioni dei podcast e dei workshop.
 
-## Bug Fixes
+## Correzioni
 
-- Corrected privacy policy link redirects in subscription modals
-- Fixed coupon validation errors during academy workshop registration
+- Corretti i reindirizzamenti dei collegamenti all'informativa sulla privacy nelle finestre di iscrizione.
+- Risolti gli errori di validazione dei coupon durante la registrazione ai workshop di Quietmood Academy.
 
 </Update>
 
 <Update label="2024-08-15" description="v1.1.0" tags={["feature", "breaking"]}>
 
-## New Features
+## Nuove funzionalità
 
-- Launched initial podcast integration with episode embeds from **Comfort Zone**
-- Added newsletter signup with automatic coupon delivery for first-time subscribers
+- Introdotta l'integrazione iniziale con il podcast, con incorporamento degli episodi di **Comfort Zone**.
+- Aggiunta l'iscrizione alla newsletter con invio automatico del coupon ai nuovi iscritti.
 
-## Breaking Changes
+## Cambiamenti rilevanti
 
-- Updated subscription API endpoints; migrate to new format at `https://api.example.com/v2/subscribe`
-- Removed legacy footer widget compatibility for older browsers
+- Aggiornato il flusso di iscrizione alla newsletter. Le integrazioni che utilizzano il formato precedente devono essere adeguate al nuovo processo.
+- Rimossa la compatibilità con il precedente widget del footer sui browser meno recenti.
 
-## Bug Fixes
+## Correzioni
 
-- Patched form validation for name and email fields in signup modals
+- Corretta la validazione dei campi nome ed email nelle finestre di iscrizione.
 
 </Update>
 
-## How to Upgrade
-
-Follow these steps to update Quietmood to the latest version.
-
-<Steps>
-  <Step title="Check Current Version" icon="check-circle">
-
-    View your current version in the dashboard.
-
-    ```bash
-    quietmood --version
-    ```
-
-  </Step>
-  <Step title="Update via CLI" icon="download">
-
-    <Tabs>
-      <Tab title="npm" icon="package">
-        ```bash
-        npm update quietmood
-        ```
-      </Tab>
-      <Tab title="Docker" icon="docker">
-````dockerfile
-docker pull quietmood:latest
-docker-compose up -d
-````
-      </Tab>
-    </Tabs>
-
-  </Step>
-  <Step title="Verify Update" icon="shield-check">
-
-    Restart services and confirm the new version.
-
-    <CodeGroup tabs="CLI,Dashboard">
-      ```bash
-      quietmood status
-      ```
-      ```javascript
-      // Check via API
-      fetch('https://api.example.com/version')
-        .then(res => res.json())
-        .then(data => console.log(data.version));
-      ```
-    </CodeGroup>
-
-  </Step>
-</Steps>
-
-## Known Issues and Resolutions
+## Problemi noti e soluzioni
 
 <ExpandableGroup>
-  <Expandable title="Signup form occasionally fails on mobile" default-open="true">
-    This affects Safari on iOS 17. Workaround: Use Chrome or update to iOS 18. Fixed in v1.2.1 (upcoming).
+  <Expandable title="Il modulo di iscrizione può non funzionare su alcuni dispositivi mobili" default-open="true">
+
+    Il problema riguarda Safari su iOS 17. Come soluzione temporanea, usa Chrome oppure aggiorna il dispositivo a iOS 18. La correzione è prevista in una prossima release.
+
   </Expandable>
-  <Expandable title="Coupon emails delayed in high-traffic periods">
-    Due to email provider throttling. Resolutions: Check spam folder or resend from dashboard. Mitigated in v1.2.0 with queue improvements.
+  <Expandable title="Le email con i coupon possono arrivare in ritardo">
+
+    I ritardi possono dipendere dalla limitazione temporanea del servizio di posta elettronica nei periodi di maggiore traffico. Controlla la cartella spam e, se necessario, richiedi un nuovo invio dalla tua area personale. I miglioramenti alla coda di invio sono inclusi nella versione 1.2.0.
+
   </Expandable>
 </ExpandableGroup>
 
 <Callout kind="tip">
-  Found a bug? [Submit feedback](/introduction#feedback) or check the [GitHub repository](https://github.com/example/quietmood).
+
+Hai trovato un problema? Contatta il supporto via WhatsApp al numero 0510217358 o visita la pagina dei [servizi Quietmood](/help-center/servizi/quali-servizi-offre-quietmood).
+
 </Callout>
 
 <Columns cols={3}>
-  <Card title="Quickstart" icon="rocket" href="/quickstart">
-    Get started after upgrading.
+  <Card title="Help Center" icon="help-circle" href="/help-center-quietmood">
+
+    Torna all'Help Center
+
   </Card>
-  <Card title="API Reference" icon="code" href="/authentication">
-    Updated endpoints details.
+  <Card title="Servizi" icon="settings" href="/help-center/servizi/quali-servizi-offre-quietmood">
+
+    Scopri i servizi
+
   </Card>
-  <Card title="Support" icon="help-circle" href="/help-center">
-    Need assistance? Contact us.
+  <Card title="Academy" icon="play-circle" href="/help-center/academy/come-accedere-quietmood-academy">
+
+    Accedi all'Academy
+
   </Card>
 </Columns>

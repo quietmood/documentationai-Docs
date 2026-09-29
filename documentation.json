@@ -21,6 +21,18 @@
           {
             "title": "Help Center",
             "path": "help-center-quietmood"
+          },
+          {
+            "title": "Inizia qui con Quietmood",
+            "path": "help-center/faq/getting-started"
+          },
+          {
+            "title": "Come applicare la Strategia nel quotidiano",
+            "path": "help-center/guides/applicare-strategia-quotidiano"
+          },
+          {
+            "title": "Changelog",
+            "path": "changelog"
           }
         ]
       },
@@ -38,6 +50,18 @@
           {
             "title": "Come fissare una consulenza",
             "path": "help-center/servizi/come-fissare-consulenza"
+          },
+          {
+            "title": "Chi è Quietmood",
+            "path": "help-center/servizi/chi-quietmood"
+          },
+          {
+            "title": "Come scegliere il servizio giusto",
+            "path": "help-center/servizi/come-scegliere-servizio"
+          },
+          {
+            "title": "Cosa aspettarsi dalla prima consulenza",
+            "path": "help-center/servizi/cosa-aspettarsi-prima-consulenza"
           }
         ]
       },
@@ -70,6 +94,40 @@
               {
                 "title": "In che modo la Strategia Quietmood è diversa da qualsiasi cosa io abbia provato?",
                 "path": "help-center/faq/strategia/differenze-strategia-quietmood"
+              }
+            ]
+          },
+          {
+            "group": "Academy",
+            "pages": [
+              {
+                "title": "Come funziona l'account gratuito della Academy?",
+                "path": "help-center/faq/academy/come-funziona-account-gratuito"
+              },
+              {
+                "title": "Come posso cancellare la mia iscrizione?",
+                "path": "help-center/faq/academy/come-cancellare-iscrizione"
+              },
+              {
+                "title": "Cosa ricevo entrando nel Quiet Circle?",
+                "path": "help-center/faq/academy/quiet-circle-cosa-ricevo"
+              }
+            ]
+          },
+          {
+            "group": "Servizi",
+            "pages": [
+              {
+                "title": "Quanto dura una consulenza e come si svolge?",
+                "path": "help-center/faq/servizi/quanto-dura-consulenza"
+              },
+              {
+                "title": "Come posso pagare i servizi Quietmood?",
+                "path": "help-center/faq/servizi/come-pagare-servizi"
+              },
+              {
+                "title": "Quietmood offre servizi per aziende?",
+                "path": "help-center/faq/servizi/servizi-aziende"
               }
             ]
           }
@@ -119,6 +177,28 @@
   "favicon": "https://blob-cdn.documentation.ai/org-cf396de9-4fdb-4005-a8db-85045a337b07/doc-8a935ecb-1ed9-4e33-b479-622511309e6c/1772793070339-fhjm2zo1pow-comfy.png?q=85&fm=auto&auto=compress%2Cformat",
   "logo-light": "https://blob-cdn.documentation.ai/org-cf396de9-4fdb-4005-a8db-85045a337b07/doc-8a935ecb-1ed9-4e33-b479-622511309e6c/1772793070339-fhjm2zo1pow-comfy.png?q=85&fm=auto&auto=compress%2Cformat",
   "initialRoute": "help-center-quietmood",
+  "redirects": [
+    {
+      "source": "/help",
+      "destination": "/help-center-quietmood",
+      "statusCode": 301
+    },
+    {
+      "source": "/help-center",
+      "destination": "/help-center-quietmood",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/create-new-project",
+      "destination": "/help-center/guides/applicare-strategia-quotidiano",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq",
+      "destination": "/help-center/faq/getting-started",
+      "statusCode": 301
+    }
+  ],
   "template": "atlas",
   "integrations": {
     "ga4": {
