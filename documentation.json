@@ -12,7 +12,6 @@
       "text": "undefined"
     }
   },
-  "openapi": "api-reference/openapi.yaml",
   "navigation": {
     "groups": [
       {
@@ -29,6 +28,10 @@
           {
             "title": "Come applicare la Strategia nel quotidiano",
             "path": "help-center/guides/applicare-strategia-quotidiano"
+          },
+          {
+            "title": "Approfondimenti dal blog Quietmood",
+            "path": "help-center/blog-approfondimenti"
           },
           {
             "title": "Changelog",
