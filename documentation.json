@@ -274,5 +274,47 @@
       ]
     }
   },
-  "description": "Il centro assistenza Quietmood: guide, FAQ e risorse per conoscere la Strategia Quietmood, i servizi, la Academy e il Quiet Circle."
+  "description": "Il centro assistenza Quietmood: guide, FAQ e risorse per conoscere la Strategia Quietmood, i servizi, la Academy e il Quiet Circle.",
+  "footer": {
+    "links": [
+      {
+        "header": "Risorse",
+        "items": [
+          {
+            "label": "Quiet Circle",
+            "href": "https://quietcircle.online"
+          },
+          {
+            "label": "Podcast Comfort Zone",
+            "href": "https://www.podcastcomfort.zone"
+          },
+          {
+            "label": "Sito Quietmood",
+            "href": "https://quietmood.it"
+          }
+        ]
+      },
+      {
+        "header": "Legale",
+        "items": [
+          {
+            "label": "Privacy Policy",
+            "href": "https://www.iubenda.com/privacy-policy/67405448"
+          },
+          {
+            "label": "Cookie Policy",
+            "href": "https://www.iubenda.com/privacy-policy/67405448/cookie-policy"
+          }
+        ]
+      }
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/emiliogerboni",
+      "facebook": "https://facebook.com/strategiaquietmood",
+      "tiktok": "https://www.tiktok.com/@drgerboni",
+      "podcast": "https://www.podcastcomfort.zone",
+      "website": "https://quietcircle.online"
+    },
+    "copyright": "© 2026 dr Emilio Gerboni - Quietmood. Tutti i diritti riservati."
+  }
 }
